@@ -1,2 +1,0 @@
-# AvramlohPolni.ru
-magazinNeDlyaLohov
