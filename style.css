@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 15px;
+    position: relative;
+}
+
+.menu-button {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Скрываем меню по умолчанию */
+nav {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(-20px); /* Начальная позиция меню сверху */
+}
+
+nav.hidden {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); /* Меню возвращается на своё место */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 10px 0;
+}
+
+footer {
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Стили для ссылок */
+a {
+    text-decoration: none; /* Убирает подчёркивание по умолчанию */
+    color: blue; /* Цвет текста по умолчанию */
+    transition: color 0.3s ease; /* Плавное изменение цвета текста */
+}
+
+a:hover {
+    color: red; /* Цвет текста при наведении */
+    text-decoration: none; /* Убирает подчеркивание при наведении */
+}
+
+/* Стили для текста внутри ссылок */
+span {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 28px;
+}
